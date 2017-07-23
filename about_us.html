@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>關於我們</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="reset.css" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+    <link href="header.css" rel="stylesheet">  
+    <link href="recommended_project.css" rel="stylesheet">
+    <link href="popular_project.css" rel="stylesheet">
+    <link href="proposal.css" rel="stylesheet">
+    <link href="fully_support.css" rel="stylesheet">
+    <link href="success_stories.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <link href="mygrid.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		$(window).scroll(function(){
+    			if ($(window).scrollTop() >= 200)
+    			{
+    				$('.row-2').css({
+    					opacity:'1',
+    					transition:'1s'
+    				});
+    				$('#scrollDown').css({
+    					opacity:'0',
+    					transition:'1s'
+    				});
+    			}
+    			if ($(window).scrollTop() >= 400)
+    			{
+    				$('.row-3').css({
+    					opacity:'1',
+    					transition:'1s'
+    				});
+    			}
+    			if ($(window).scrollTop() >= 600)
+    			{
+    				$('#rowMember').css({
+    					opacity:'1',
+    					transition:'1s'
+    				});
+
+    				$('.row-4').css({
+    					opacity:'1',
+    					transition:'1s'
+    				});
+    			}
+    			if ($(window).scrollTop() >= 800)
+    			{
+    				
+    				// $('.row-5').css({
+    				// 	opacity:'1',
+    				// 	transition:'1s'
+    				// });
+
+    			}
+    		});
+    	});
+
+
+    </script>
+    <style>
+    	.row{
+    		background: #CBF4FE;   	
+    	}    
+    	 
+    	.row-2,.row-3,.row-4,.row-5, #rowMember{
+    		opacity: 0;
+    	}
+    	.img-1 {
+    		margin-top:15px;
+    		/*margin-left: 100px;*/
+    		margin-bottom: 40px;
+    		width: 30%;
+    		/*border:5px solid white;    		*/
+    	}
+    	.text-1,.text-2,.text-3{
+    		line-height: 1.8em;
+    		font-size: 18px;
+    		padding: 0 1em;
+    	}
+    	.text-1{
+    		float: right;
+    	}
+    	.text-2{
+    		position: relative;
+    		left:-470px;
+    	}
+    	.img-2{
+    		position: relative;
+    		left:470px;
+    		padding: 0 1em;
+    		margin-top: 20px;
+    	}
+    	.column-4{
+    		padding-right: 10px;
+    	}    	
+    	
+    	.memberImg img{
+    		border: 5px solid white;
+    		border-radius: 100%;
+    	}
+    	.row-4{
+    		text-align: center;
+    		border-top: none;
+    		border-bottom: none;
+    	}
+    	.row-4 p{
+    		text-align: center;
+    		margin-top: 0;	
+    	}
+    	.row-4 h3{
+    		margin-bottom: 0;
+    	}
+    	#rowMember{
+    		/*outline: 1px solid red;*/
+    		padding-left: 30px;
+    		border-top: none;
+    		border-bottom: none;
+    	}
+    	.row-2,.row-4,#rowMember{
+    		background: #fff;
+    	}
+    	img{
+    		vertical-align: middle;
+    	}
+    	.rowBanner{
+    		background: none;
+    		padding-left: 0;
+    		padding-right: 0;
+    	}
+    	span{
+    		display: block;
+    		position: absolute;
+    		top:600px;
+    		left: 450px;
+    		/*left: 0;*/
+    		/*right: 0;*/
+    		/*margin: auto;*/
+    		font-size: 1.5em;
+    		font-weight: bold;
+    		color: white;
+    		border:2px solid white;
+    		padding: 10px;
+    		text-align: center;
+
+    	}
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="control-box">
+    <div class="box">
+    <label for="control-box" id="hb"></label>
+        <!-- header========================================= -->
+        <div class="nav">
+            <div class="log">
+                <a href="index.html" id="logo_link">
+                    <img src="images/logo.png">
+                </a>
+            </div>
+            <ul class="main_menu">
+                <li id="n1">
+                <a  href="explore_project.html">
+                    探索專案<br>Explore Projects
+                </a>
+                    <ul id="sub_menu">
+                      <li><a href="">科技</a></li>
+                      <li><a href="">設計</a></li>
+                      <li><a href="">動畫</a></li>
+                      <li><a href="">公共</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="proposal.html">立即提案<br>Proposal</a></li>
+                <li><a href="#">成功案例<br>Success Stories</a></li>
+                <li><a href="#">到陣夥伴<br>Partners</a></li>
+                <li><a href="about_us.html">關於我們<br>About Us</a></li>
+            </ul>
+            
+        </div>
+        <div class="login">
+            <ul>
+                <li><i class="fa fa-user" style="font-size:24px"></i></li>
+                <li><a href="#">登入</a></li>
+            </ul>
+        </div>
+<!-- banner======================================================= -->
+<div class="box">
+	<div class="row rowBanner">
+		<img src="images/team-jumping-592.jpg">
+		<span id="scrollDown">往下滾動</span>
+	</div>
+	<div class="row row-2">
+			<div class="column-2 img-1">
+				<img src="images/eric.gif">
+			</div>
+			<div class="column-2 text-1">
+				<h2>緣起</h2>
+				<p>到陣來做夥網站，是由Tim所創辦的。<br>當初只是一個想法"想揪人一起完成網站設計"。<br>
+				   然而，很難在朋友中找到合適的人來合作，那如果在網路上分享我的idea，能找到志同道合的人來幫忙嗎?<br>
+				   於是創辦此網站。</p>	
+			</div>
+	</div>		
+	<div class="row row-3">
+			<div class="column-2 img-2">
+				<img src="images/images (2).jpg">
+			</div>
+			<div class="column-2 text-2">
+				<h2>理念</h2>
+				<p>在到陣來做夥網站上, 發佈你的想法, 並號召有興趣的人一起來完成。</p>	
+				<p>希望能讓有夢想的人，可以找到人幫忙。 想加入的人可以參與有趣的專案。</p>
+			</div>
+	</div>
+	<div class="row" id="rowMember">
+		<h2>成員</h2>
+	</div>
+	
+	<div class="row row-4">
+
+		<div class="column-4 memberImg">		
+			<img src="images/matthew.png">
+			<h3>Mark</h3>
+			<p>CEO.</p>
+		</div>
+		<div class="column-4 memberImg">
+			<img src="images/lin.jpg">
+			<h3>Lin</h3>
+			<p>創意總監</p>
+		</div>
+		<div class="column-4 memberImg">
+			<img src="images/sarah.jpg">
+			<h3>Sarah</h3>
+			<p>技術總監</p>
+		</div>
+		<div class="column-4 memberImg">
+			<img src="images/elaine.jpg">
+			<h3>Elaine</h3>
+			<p>藝術總監</p>
+		</div>
+	</div>		
+	
+</div>
+
+
+        <!--footer==============================  -->
+        <div class="footer footer-sm">
+            <div class="item about_us">
+                <h2>關於我們</h2>
+                <ul>
+                    <li>人才招募</li>
+                    <li>媒體資源</li>
+                    <li>商標使用規範</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h2>條款</h2>
+                <ul>
+                    <li>網站使用條款</li>
+                    <li>提案者合約</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h2>協助 </h2>
+                <ul>
+                    <li>常見問題</li>
+                    <li>使用手冊</li>
+                    <li>提案教室</li>
+                </ul>
+            </div>
+            <div class="item social_group">
+                <h2>社群</h2>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Flickr</li>
+                </ul>
+            </div>
+            <div id="copyright" class="clearfix">到陣來做夥 &#169 2017All Right Reserved</div>
+        </div>
+</body>
+</html>
