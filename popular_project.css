@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-04-13 21:14:30
+ * @version $Id$
+ */
+.popular_project{
+		text-align: center;		
+		margin: 40px 0;
+	}
+
+.popular_project .item{
+		width: 200px;
+		height:280px;		
+		float: left;
+		margin-right: 50px;		
+		margin-bottom: 30px;
+		position: relative;
+		cursor: pointer;	
+		box-shadow:1px 1px 3px #ccc;
+		/*border:1px solid #ccc;*/
+	}	
+	.popular_project div.item:nth-of-type(5n-1){
+		margin-right: 0;
+	}
+	.clearfix{
+		clear: both;
+	}
+	
+	.popular_project .design{
+		margin-top: 60px;
+	}	
+	
+	.popular_project .group{
+		display: none;
+		font-size: 0;
+	}
+	.popular_project .item img{
+		height: 136px;		
+		width: 101%;
+
+	}
+	.popular_project .item h4, p{
+		text-align: left;
+		margin-bottom: 10px; 
+	}
+	.popular_project .item p{
+		margin-bottom: 10px;
+		color: #969696;
+		font-size: 12px;
+	}
+	.popular_project .clearfix{
+		display: inline-block;
+		width: 960px;
+		height: 3px;
+		background-color:#4CC0E7;		
+		margin-bottom: 30px;
+	}
+	@media screen and (max-width: 768px){
+		.popular_project .item{
+			width: 80vw;
+			margin-left: 10%;
+		}
+	}
+	

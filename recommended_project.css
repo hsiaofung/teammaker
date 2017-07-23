@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-04-13 20:50:17
+ * @version $Id$
+ */
+.recommended_project{
+		text-align: center;		
+		margin: 4.16667% 0;
+		background:#CBF4FE;
+	}	
+	.item{
+		width: 21.09375%;
+		float: left;
+		margin-right: 5.2083333%;		
+		position: relative;
+		margin-bottom: 30px;
+		cursor: pointer;	
+		background:#fff;
+	}	
+	.recommended_project div:nth-of-type(4n){
+		margin-right: 0;
+	}
+	.clearfix{
+		clear: both;
+	}
+	
+	.group{
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 24%;
+		height: 42px;
+		background: #000;
+		color: #fff;
+		text-align: center;
+		line-height: 42px;
+	}
+	.recommended_project .item img{
+		height: 302px;
+	}
+	.recommended_project .item h4, p{
+		text-align: left;
+		margin-bottom: 10px; 
+		padding-left:0.3125%;
+	}
+	.recommended_project .item p{
+		color: #969696;
+		font-size: 1em;
+		line-height:1.5em;
+		padding-left:0.3125%;
+	}
+
+	@media screen and (max-width: 768px){
+		.item{
+			width: 80%;
+			margin-left:10%;			
+		}		
+	}
+	

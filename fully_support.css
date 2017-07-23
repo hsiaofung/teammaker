@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-04-18 21:36:05
+ * @version $Id$
+ */
+.fully_support{
+        width: 100%;
+        max-width: 960px;
+        margin: auto;
+        text-align: center;
+        margin-top:80px;
+        margin-bottom: 80px;
+    }
+    .fully_support h2{
+        display: inline-block;
+        margin-bottom: 30px;
+        padding: 10px;
+        border-bottom:3px solid #4CC0E7;
+    }
+    .fully_support h3{
+        margin-bottom: 30px;        
+    }
+    .fully_support .item{        
+        float: left;        
+    }    
+    .fully_support .item .block img{
+        display: inline-block;
+        width: 62px;
+        height: 62px; 
+        margin: 20px;
+    }
+    .fully_support .logo{        
+        margin: 0 120px;
+    }
+    .block{
+        width: 300px;        
+        margin: auto;
+    }
+    .fully_support .item .block span{
+        display: inline-block;                
+        color: black;    
+        vertical-align: 50px;
+        margin-right: 10px;
+    }
+    
+    .clearfix{
+    	clear: both;
+    }
+    
+    @media screen and (max-width: 767px){
+        #fan_text{            
+            position: relative;
+            left:8%;
+        }
+        #fan_img{            
+            position: relative;
+            left:-60%;
+        }
+        #sport_text{            
+            position: relative;
+            left:8%;
+        }
+        #sport_img{            
+            position: relative;
+            left:-60%;
+        }
+        #group_text{            
+            position: relative;
+            left:8%;
+        }
+        #group_img{            
+            position: relative;
+            left:-60%;
+        }
+        #logo_at_fully_support{
+            display: none;
+        }
+        .fully_support .item .block img{
+            margin-left: 20px;
+        }
+        #upload_img{
+            margin-left: 0px;
+        }
+        #upload_img .block img{
+            margin-left: 0px;
+        }
+        #upload_pic{
+            position: relative;
+            left: -9%;
+        }
+        #video_img{
+            position: relative;
+            left: -9%;
+        }
+        #file_img{
+            position: relative;
+            left: -9%;
+        }
+        #upload_text{
+            position: relative;
+            left: -13%;
+        }
+        #video_text{
+            position: relative;
+            left: -13%;
+        }
+        #file_text{
+            position: relative;
+            left: -13%;
+        }
+
+    }
+    

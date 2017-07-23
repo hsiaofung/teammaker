@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-04-20 17:10:51
+ * @version $Id$
+ */
+.banner_for_explore_project {
+        width: 100%;
+        max-width: 960px;        
+        margin: auto;
+        background: #064571;
+        padding: 100px 0;
+        position: relative;
+        text-align: center;
+        margin-bottom: 20px;
+        
+    }
+    
+    .banner_for_explore_project h2 {
+        display: block;
+        width: 240px;
+        color: white;        
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border:none;
+    }
+    
+    .banner_for_explore_project a {
+        display: block;
+        width: 100px;
+        color: black;
+        background: #fff;        
+        border-radius: 10px;
+        margin: 40px;
+        padding: 10px;
+        position: absolute;
+        font-size: 12px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 10px;       
+    }
+        
+    .container {
+        width: 100%;
+        max-width: 960px;
+        margin: auto;        
+        margin-top: 40px;
+    }
+    
+    .aside {
+        float: left;        
+        width: 250px;                
+    }
+    .aside li{        
+        width: 100%;        
+        text-align: left;
+        background: #CBF4FE;        
+    }
+    .aside li a{        
+        display: block;
+        width: 240px;
+        line-height: 40px;               
+        border-bottom: 2px solid #888;
+        padding-left: 10px;
+        box-shadow: 3px 3px 3px #888;        
+    }
+
+    .aside li a:hover{
+        background: #4CC0E7;
+        color: #fff;        
+        display: block;
+        transition: 0.3s ease-in-out;      
+    }
+    .content {
+        float: left;
+        width: 570px;        
+        margin-left: 40px;       
+    }
+    .block{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .content .item {
+        float: left;
+        width: 204px;
+        margin-right: 10px;        
+    }
+    .content .item img {
+        width: 100%;        
+    }    
+    .content .word {
+        width: 300px;
+    }
+    .content .word p{
+        font-size: 16px;
+    }
+    .clearfix {
+        clear: both;
+        display: inline-block;
+        width: 650px;
+        height: 1px;
+        background-color:#4CC0E7;       
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .clearfix_all{
+        clear:both;
+    }
+    
+
+   select, input{
+        width: 150px;
+        height: 40px;
+        margin-right: 35px;
+        margin-bottom: 40px;
+        border: 2px solid #4CC0E7;
+        border-radius: 30px;
+        font-size: 14px;
+        position: relative;
+   }
+   /*s*/
+   input,select:focus{
+    outline: none;        
+    border:2px solid #4CC0E7;
+   }
+
+   @media screen and (max-width:767px) {   
+         #adv_search{
+            margin-top: 86px;
+         }
+         select{
+            width: 80%;
+            margin-left: 3%;
+         }
+         input{
+            text-align: center;
+            width: 100%;
+            height: 30px;           
+            border-radius: 0px;
+            margin-right: 0;
+         }
+         .content {
+            float: left;
+            width: 100%;
+            margin-left: 0;           
+        }        
+        .content .item {            
+            width: 80%;
+            padding-left: 0;
+            margin-left: 10%;
+        }
+        .clearfix {                       
+            height: 1px;
+            background-color:#4CC0E7;               
+        }
+        #id_page_button {
+            width: 100%;
+        }
+        #id_page_button li a{
+            width: 35px;
+        }
+        .aside {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .aside li a{                 
+            width: 100%;
+            padding-left: 10px;            
+        }
+        .banner_for_explore_project{
+            top:0;
+            width: 100vw;
+        }        
+        .box{
+            width: 100vw;
+        }
+   }
+   
