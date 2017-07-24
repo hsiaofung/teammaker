@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>機械手臂</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <style type="text/css">
+    .box {
+        width: 100%;
+        max-width: 960px;
+        text-align: center;
+    }
+    
+    h1 {
+        margin-top: 40px;
+    }
+    
+    .sub_box {
+        width: 100%;
+        margin: 30px 0;      
+    }
+    
+    .item {
+        width: 480px;
+        float: left;        
+    }
+    
+    .block {
+        width: 40px;
+        height: 40px;
+        background: #ccc;
+        margin: 10px;
+    }
+    
+    .clearfix {
+        clear: both;
+    }
+    
+    
+
+    .fans {
+        width: 450px;
+        text-align: left;
+        margin-left: 20px;
+        padding-left: 10px;       
+        height: 300px;
+        background: #CBF4FE;
+    }
+    
+    .join {
+        display: block;
+        width: 400px;
+        height: 40px;
+        line-height: 40px;       
+        text-align: center;
+        /*border: 3px solid yellow;*/
+        border-radius: 10px;
+        color: #777;
+        background: #fa0;
+        color: #000;
+    }
+    
+    .join:hover {
+        font-size: 20px;
+        background: yellow;
+        color: black;
+        transition: 0.2s ease-in-out;
+    }
+    
+    img {
+        vertical-align: middle;
+    }
+    
+    h3 {
+        margin-top: 10px;
+        margin-bottom: 26px;       
+        color: red;
+        font-size: 40px;
+        /*font-family: sans-serif;*/
+
+    }
+    
+    span {
+        font-size: 14px;
+        color: #969696;
+    }
+    
+    .message {
+        display: block;
+        width: 400px;
+        border-bottom: 1px solid #969696;
+        margin-bottom: 30px;
+    }
+    
+    .move {
+        height: 300px;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+    .footer{
+    	text-align:left;
+    }
+   
+    /*-=============tab=====================*/
+    
+    .b2 {
+        width: 100%;
+        max-width: 960px;
+        height:880px;
+        margin: auto;   
+        margin-bottom:100px;
+        position:relative;
+        box-shadow:1px 1px 3px #ccc;
+        
+    }
+    
+    
+    .b2 ul {       
+        width: 100%;
+        text-align: left;
+        font-size: 0;
+        background: #000;
+        background: linear-gradient(0deg, #aaa, #ccc);
+    }
+    
+    .b2 ul li {
+        display: inline-block;
+        width: 120px;
+        height: 60px;
+        line-height: 30px;        
+    }
+
+    .b2 ul li:last-child {
+        padding-right: 0px;
+    }
+
+    
+    .b2 ul li:first-child {          
+        color: #fff;        
+    }
+    .b2 ul li label:hover { 
+        color: #fff;
+        background:black;
+        transition: all 0.3s linear;
+    }      
+
+    .b2 li:hover { 
+        color: red;
+        background:black;
+    }   
+    
+    input {
+        opacity: 0;
+        position: absolute;
+    }
+    input[type="radio"]:checked + div {
+        /*width: 40px;
+        height: 40px;*/
+       
+        visibility: visible;
+
+    }
+    
+    .block {
+        /*display: inline-block;*/
+        width: 960px;
+        height: 799px;
+        background: #fff;
+        position: absolute;
+        top:49px;
+        left: -10px;
+        color: black;
+        font-size:14px;
+        padding:10px 0;
+        
+        z-index: 0;
+    }
+    .aa {
+        background: #fff;
+        /*visibility: hidden;*/
+    }
+
+    .bb {
+        background: #fff;
+        visibility: hidden;
+    }
+    
+    .cc {
+        background: #fff;
+        visibility: hidden;
+    }
+    .dd {
+        background: #fff;
+        visibility: hidden;
+    }
+    .ee {
+        background: #fff;
+        visibility: hidden;
+    }
+    .ff {
+        background: #fff;
+        visibility: hidden;
+    }
+    .b2 .block h3{
+        margin:20px auto;
+        padding:0.8em;
+        text-align:center;
+        color:black;
+        width:96%;
+        border-bottom:3px solid #4CC0E7;
+        font-size:1.5em;
+    }
+    .b2 .block p{
+        font-size:14px ;
+        text-align:justify;
+        line-height:1.8em;
+        margin:20px;
+    }
+    .sub_box label{
+        display : block;
+        width:100%;
+        height:100%;
+        text-align: center;    
+        margin: 10px 0;
+        /*background: #000;*/
+        padding: 5px 0px;
+        width: 100%;
+        border-right: 1px solid #a0a0a0;
+        font-size: 18px;
+        color: #444;
+        cursor:pointer;
+    }       
+    img{
+        margin-bottom:20px;
+    }
+    .fig_fan_1, .fig_proposal_man{
+        width:80px;
+        height:80px;
+        float:left;
+        border-radius:100px;
+        overflow:hidden;
+        margin-left:20px;
+    }
+    .des_proposal_man{
+        float:left;
+        width:740px;
+        padding: 0 40px;
+
+    }
+    
+    .ee{
+        width:960px;
+    }
+    .proposal_name_at_h2{
+        font-size:12px;
+    }
+    .project_name_at_h1{
+        font-size:24px;
+    }
+    @media screen and (max-width: 767px) {        
+        .item {
+            width: 100%;
+        }
+        .fans{
+            margin-left: 0;
+        }
+        .message {
+            width: 100%;
+        }
+        .join{
+            width: 90%;
+            background: #fa0;
+            color: #000;
+        }
+        .b2 ul li {         
+            width: 64px;
+            height: inherit;
+            /*line-height: 30px;        */
+            /*outline: 1px solid red;*/
+        }
+        label{
+            font-size: 15px;
+            padding: 0px 1px;
+            /*margin:3px 0;*/
+            /*border-right: 1px solid #fff;*/
+        }
+    }
+    </style>
+</head>
+
+<body>
+<input type="checkbox" id="control-box">
+    <div class="box detail_box">
+    <label for="control-box" id="hb"></label>
+        <!-- header========================================= -->
+        <div class="nav">
+            <div class="log">
+                <a href="index.html" id="logo_link">
+                    <img src="images/logo.png">
+                </a>
+            </div>
+            <ul class="main_menu">
+                <li id="n1">
+                <a  href="explore_project.html">
+                    探索專案<br>Explore Projects
+                </a>
+                    <ul id="sub_menu">
+                      <li><a href="">科技</a></li>
+                      <li><a href="">設計</a></li>
+                      <li><a href="">動畫</a></li>
+                      <li><a href="">公共</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="proposal.html">立即提案<br>Proposal</a></li>
+                <li><a href="#">成功案例<br>Success Stories</a></li>
+                <li><a href="#">到陣夥伴<br>Partners</a></li>
+                <li><a href="about_us.html">關於我們<br>About Us</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <ul>
+                 <li><i class="fa fa-user" style="font-size:24px"></i></li>
+                <li><a href="#">登入</a></li>
+            </ul>
+        </div>
+        <!--  詳細內容==============================================-->
+        <h1 class="project_name_at_h1">機械手臂</h1>
+        <h2 class="proposal_name_at_h2">科技 | 宋中基提案</h2>
+        <div class="sub_box b1">
+            <div class="item move">
+                <!-- <iframe src="https://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1">
+			</iframe> -->
+                <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/v489sYYjtHI?ecver=1" frameborder="0" allowfullscreen></iframe>-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YWxeT5uti70?ecver=1" frameborder="0" allowfullscreen></iframe>
+
+                
+            </div>
+            <div class="item fans">
+                <h3>76<span>名粉絲</span></h3>
+                <h3>15<span>次活動記錄</span></h3>
+                <h3 class="message">150<span>封粉絲留言</span></h3>
+                <a href="#" class="join">加入專案</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+<!--  標籤===============================================-->    
+
+        <div class="sub_box b2">
+            <ul>
+                <li class="a1"><label for="a">專案內容</label></li>
+                <li><label for="b">專案進度</label></li>
+                <li><label for="c">近期活動</label></li>
+                <li><label for="d">粉絲專頁</label></li>
+                <li><label for="e">提案者</label></li>
+            </ul>
+
+            <input type="radio" name="sex" id="a">          
+                <div class="block aa">
+                <h3>進擊的機械手臂：工業4.0版</h3>
+                <p>
+                   自從2014年MeArm.Joystick在台灣成功募資後，3年來深入全國各級學校，許多愛好者花了時間學習機械手臂結構和程式設計，隨著「工業4.0」風起雲湧，現在更要延續大家的投資，邁開大步跟「工業4.0」接軌。
+                </p>
+                <img src="images/description_project.jpg">
+                
+                <h3>「工業4.0」為什麼重要</h3>
+                <p>
+                   「工業4.0」目標是「智慧製造」，並不是單單創造新的技術，而是著重在將現有工業相關技術、銷售和產品體驗整合起來，建立具有適應性和資源效率的智慧工廠，是目前各大工業強國未來20年的努力目標。
+                </p>
+                <img src="images/description_project_v2.jpg">
+                </div>
+
+            <input type="radio" name="sex" id="b">  
+                <div class="block bb">
+                <h3>專案進度</h3>
+                <p>於 3 周前 更新<br>
+
+                手臂能"劃"中文字啦今天測了逆運動學演算法，只要輸入座標，就能畫筆畫了，目前只有支援C語言，但我會再加mBlock進來，敬請期待，謝謝支持啦^^
+                </p>   
+                </div>
+
+            <input type="radio" name="sex" id="c">
+                <div class="block cc ">
+                <h3>線上讀書會</h3>
+                   <p>4/20 [19:30] 線上讀書會<br>
+                      這次邀請到 金厲害 大大 來幫忙講一堂機械手臂的相關主題 歡迎對主題有興趣的朋友一起來交流討論嚕 傳送門已經開啟嚕
+                   </p>   
+                </div>
+
+            <input type="radio" name="sex" id="d">
+                <div class="block dd ">
+                <h3>1位粉絲</h3>
+                   <p>                      
+                   </p>   
+                   <div class="fig_fan_1">   
+                    <img src="images/fan_1.jpg">
+                   </div>
+
+                </div>
+
+            <input type="radio" name="sex" id="e">
+                <div class="block ee ">
+                <h3>作者介紹</h3>
+                   <div class="fig_proposal_man">   
+                    <img src="images/proposal_1.jpg">
+                   </div>
+                   <p class="des_proposal_man">
+                      我是行動創客學院執行長，長期浸淫IT領域，除了與台灣Arduino合作開設原廠課程外，也陸續在到陣來做夥上推出7個專案，本次為第8次作品專案。工作之餘也進行免費的科技下鄉活動，迄今已在全台辦過100 餘場機器手臂DIY 活動，將Maker精神不斷傳承下去。
+                   </p>   
+                </div>           
+
+        </div>
+
+
+  
+
+
+
+        
+        <div class="footer">
+            <div class="item about_us">
+                <h2>關於我們</h2>
+                <ul>
+                    <li>人才招募</li>
+                    <li>媒體資源</li>
+                    <li>商標使用規範</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h2>條款</h2>
+                <ul>
+                    <li>網站使用條款</li>
+                    <li>提案者合約</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h2>協助 </h2>
+                <ul>
+                    <li>常見問題</li>
+                    <li>使用手冊</li>
+                    <li>提案教室</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h2>社群</h2>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Flickr</li>
+                </ul>
+            </div>
+            <div class="clearfix">到陣來做夥 &#169 2017All Right Reserved</div>
+        </div>
+        
+</div>
+
+        
+    
+</body>
+
+</html>
